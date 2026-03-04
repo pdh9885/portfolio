@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 보이는 화면 기준!!!! */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* 각 페이지(section)의 공통 클래스 */
+.page {
+    width: 100%;
+    height: 100%;
+
+    /* outline: 2px solid lime; */
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+
+header {
+    width: 100%;
+    padding: 0 100px;
+    box-sizing: border-box;
+    height: 100px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+header .title {
+    display: none;
+}
+header .gnb {}
+header .gnb ul {
+    text-align: right;
+}
+header .gnb ul li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+header .gnb ul li a {
+    line-height: 60px;
+    padding: 0 30px;
+    
+    display: block;
+    font-size: 22px;
+    letter-spacing: -1.5px;
+    border-radius: 60px;
+}
+
+header .gnb ul li.active a {
+    background-color: #fff;
+    color: #ff6500;
+}
+
+
+#home {
+    background-image: url(img/bg_orange.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 60% 100%;
+
+    position: relative;
+}
+#home .title {
+    position: absolute; /* #home을 기준으로 절대위치!!! */
+    left: 100px;
+    bottom: 100px;
+}
+#home .title .name {
+    margin-bottom: 30px;
+}
+#home .title .name p {
+    font-size: 36px;
+    letter-spacing: -1px;
+}
+#home .title .name h2 {
+    font-size: 70px;
+}
+
+#home .title .des {
+    font-size: 26px;
+    color: rgba(255,255,255,0.7);
+}
+
+#home .profile {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+#home .profile img {
+    width: 86%;
+    display: block;
+}
+
+#portfolio {}
+#portfolio .sec-title {
+    padding-top: 140px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+#portfolio .sec-title h2 {
+    font-size: 2.8rem;
+}
+#portfolio .sec-title p {
+    font-size: 1.5rem;
+}
+
+#portfolio .content {
+    /* width: 1720px; */
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 20px;
+}
+
+#portfolio .content .box a {
+    display: block;
+    margin-bottom: 20px;
+}
+#portfolio .content .box a img {
+    width: 100%; /* 이미지태그의 너비 조절을 해야 화면을 넘치지 않아요! */
+    display: block;
+    border-radius: 10px;
+}
+
+#portfolio .content .caption h3 {
+    font-size: 1.5rem;
+}
+#portfolio .content .caption p {
+    font-size: 1.2rem;
+}
+
+#contact {
+    position: relative; /* #contact를 기준으로! */
+}
+#contact .content {
+    position: absolute; /* .content 위치설정! */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); /* 중앙맞추기! */
+
+    /* outline: 2px solid lime; */ /* 공간 확인해보세요! */
+}
+#contact .content .sec-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+#contact .content .sec-title h2 {
+    font-size: 3.5rem;
+}
+#contact .content .sec-title p {
+    font-size: 2rem;
+}
+
+#contact .content .personal {
+    padding-left: 40px;
+}
+#contact .content .personal p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+#contact .content .personal p b {
+    margin-right: 20px;
+}
+
+#contact .content .personal a:hover {
+    text-decoration: underline;
+    color: #ff6500;
+}
+
+footer {
+    border-top: 1px solid rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.7);
+    padding: 50px 0;
+    text-align: center;
+}

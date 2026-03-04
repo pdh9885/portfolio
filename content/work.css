@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+
+header {
+    width: 100%;
+    padding: 0 100px;
+    box-sizing: border-box;
+    height: 100px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+header .title {
+    display: none;
+}
+
+header .gnb {}
+
+header .gnb ul {
+    text-align: right;
+}
+
+header .gnb ul li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+header .gnb ul li a {
+    line-height: 60px;
+    padding: 0 30px;
+
+    display: block;
+    font-size: 22px;
+    letter-spacing: -1.5px;
+    border-radius: 60px;
+}
+
+header .gnb ul li.active a {
+    background-color: #fff;
+    color: #ff6500;
+}
+
+
+section .top {
+    margin-top: 140px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+section .top h2 {
+    font-size: 2.8rem;
+}
+
+section .top p {
+    font-size: 1.5rem;
+}
+
+section .content {
+    width: 1200px;
+    margin: 0 auto 100px;
+}
+
+section .content .title {
+    margin-bottom: 40px;
+}
+section .content .title p {
+    font-size: 1.2rem;
+    color: #ff6500;
+}
+section .content .title h3 {
+    font-size: 2.4rem;
+}
+
+section .content .description {
+    margin-bottom: 40px;
+}
+section .content .description > div {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+section .content .description > div h4 {
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;;
+}
+section .content .description > div ul {
+    display: inline-block;
+}
+section .content .description > div ul li {
+    line-height: 1.8;
+}
+section .content .description>div ul li b {
+    margin-right: 10px;
+}
+section .content iframe {
+    width: 1200px;
+    height: 675px;
+    border: 0;
+    border-radius: 10px;
+}
+
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 50px 0;
+    text-align: center;
+}
